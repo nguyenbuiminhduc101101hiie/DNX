@@ -16,9 +16,9 @@ using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MudBlazor;
-using NVOAMASIS.Data;
+using DNX.Data;
 
-namespace NVOAMASIS.Components.Accounting.Pages
+namespace DNX.Components.Accounting.Pages
 {
     public partial class GeneralLedgerExcelImport
     {

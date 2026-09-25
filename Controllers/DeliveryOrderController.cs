@@ -2,10 +2,10 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
-using NVOAMASIS.Models;
-using NVOAMASIS.Services;
+using DNX.Models;
+using DNX.Services;
 
-namespace NVOAMASIS.Controllers
+namespace DNX.Controllers
 {
     /// <summary>
     /// API for Delivery Order: serve DO PDF by token when user scans QR code.

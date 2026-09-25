@@ -3,11 +3,11 @@
 @using Microsoft.AspNetCore.Components
 @using Microsoft.EntityFrameworkCore
 @using MudBlazor
-@using NVOAMASIS.Data
-@using NVOAMASIS.Models
+@using DNX.Data
+@using DNX.Models
 @using System.Linq
-@inject IDbContextFactory<NVOAMASIS.Data.AppDbContext> DbFactory
-@inject NVOAMASIS.Services.SupportServices supsv
+@inject IDbContextFactory<DNX.Data.AppDbContext> DbFactory
+@inject DNX.Services.SupportServices supsv
 @inject ISnackbar Snackbar
 @inject IStringLocalizer<SharedResource> Localizer
 @inject CustomerService csv

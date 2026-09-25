@@ -1,6 +1,6 @@
-using NVOAMASIS.Models;
+using DNX.Models;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public static class BillSeaLayoutClone
     {

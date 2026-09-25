@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Models;
+namespace DNX.Models;
 
 /// <summary>
 /// One row of ocean freight rate. <see cref="TradeLane"/> (see <see cref="PricingRateLane"/>)

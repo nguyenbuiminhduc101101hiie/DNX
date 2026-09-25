@@ -1821,7 +1821,7 @@ IBAN CODE : {CompanyInfomation.IBAN_CODE}
   <ReportAuthor>MINH HAI</ReportAuthor>
   <ReportChanged>6/13/2026 11:51:36 AM</ReportChanged>
   <ReportCreated>5/8/2024 1:21:02 PM</ReportCreated>
-  <ReportFile>C:\Users\PCPV\source\repos\NVOAMASIS\wwwroot\Reports\ReportCreditNote_SeaImport.mrt</ReportFile>
+  <ReportFile>C:\Users\PCPV\source\repos\DNX\wwwroot\Reports\ReportCreditNote_SeaImport.mrt</ReportFile>
   <ReportGuid>8ebea60bf56a45189971fee57e83a1df</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Inches</ReportUnit>

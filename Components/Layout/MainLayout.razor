@@ -18,10 +18,10 @@
 @inject IDialogService DialogService
 @inject IHttpContextAccessor HttpContextAccessor
 @inject MobileJwtTokenService JwtTokenService
-@inject NVOAMASIS.Services.Chat.ChatService ChatService
-@inject NVOAMASIS.Services.Chat.ChatNotifier ChatNotifier
-@inject NVOAMASIS.Services.Chat.ChatIdentity ChatIdentity
-@inject NVOAMASIS.Services.Chat.ChatNavigator ChatNavigator
+@inject DNX.Services.Chat.ChatService ChatService
+@inject DNX.Services.Chat.ChatNotifier ChatNotifier
+@inject DNX.Services.Chat.ChatIdentity ChatIdentity
+@inject DNX.Services.Chat.ChatNavigator ChatNavigator
 
 <MudThemeProvider />
 <MudDialogProvider />
@@ -90,7 +90,7 @@
 
             <MudIconButton Icon=@Icons.Material.Filled.Menu Color=Color.Inherit Edge=Edge.Start OnClick=DrawerToggle />
             @* <MudImage Src="Logo.png" Alt="AMASIS" Height="50" ObjectFit="ObjectFit.ScaleDown" Class="rounded-lg" /> *@
-            <MudText Typo=Typo.h5 Class="ml-3">AMASIS - NVOCC</MudText>
+            <MudText Typo=Typo.h5 Class="ml-3">DNX - NVOCC</MudText>
             <MudSpacer />
 
             <div class="mud-toolbar mud-toolbar-dense">
@@ -249,7 +249,7 @@
     @* AI Assistant - only visible when authenticated *@
     <AuthorizeView>
         <Authorized>
-            <NVOAMASIS.Components.ChatGPT.Pages.ChatGPTPanel />
+            <DNX.Components.ChatGPT.Pages.ChatGPTPanel />
         </Authorized>
     </AuthorizeView>
 </CascadingValue>
@@ -643,7 +643,7 @@
 
     private int _chatUnreadCount;
     private IDisposable? _chatSubscription;
-    private NVOAMASIS.Services.Chat.ChatCaller? _chatCaller;
+    private DNX.Services.Chat.ChatCaller? _chatCaller;
 
     private async Task StartChatAsync()
     {
@@ -670,15 +670,15 @@
         }
     }
 
-    private Task OnChatEventAsync(NVOAMASIS.Services.Chat.ChatEvent evt) => InvokeAsync(async () =>
+    private Task OnChatEventAsync(DNX.Services.Chat.ChatEvent evt) => InvokeAsync(async () =>
     {
         if (_disposed || _chatCaller is not { } caller)
             return;
 
         switch (evt)
         {
-            case NVOAMASIS.Services.Chat.ChatMessageReceived { Message: var message }
-                when message.SenderUserId != caller.UserId && message.Kind != NVOAMASIS.Models.Chat.ChatMessageKind.System:
+            case DNX.Services.Chat.ChatMessageReceived { Message: var message }
+                when message.SenderUserId != caller.UserId && message.Kind != DNX.Models.Chat.ChatMessageKind.System:
                 if (!ChatNavigator.IsViewing(message.ConversationId))
                 {
                     var text = message.HasAttachment ? "📎 " + message.AttachmentName : message.Text;
@@ -693,11 +693,11 @@
                 await RefreshChatUnreadAsync();
                 break;
 
-            case NVOAMASIS.Services.Chat.ChatReadUpdated read when read.UserId == caller.UserId:
-            case NVOAMASIS.Services.Chat.ChatConversationChanged:
-            case NVOAMASIS.Services.Chat.ChatMessageRecalled:
-            case NVOAMASIS.Services.Chat.ChatConversationHidden:
-            case NVOAMASIS.Services.Chat.ChatConversationDeleted:
+            case DNX.Services.Chat.ChatReadUpdated read when read.UserId == caller.UserId:
+            case DNX.Services.Chat.ChatConversationChanged:
+            case DNX.Services.Chat.ChatMessageRecalled:
+            case DNX.Services.Chat.ChatConversationHidden:
+            case DNX.Services.Chat.ChatConversationDeleted:
                 await RefreshChatUnreadAsync();
                 break;
 
@@ -713,7 +713,7 @@
         // Đặt yêu cầu trước khi mở tab: ChatIndex mới tạo sẽ lấy pending trong OnInitializedAsync.
         if (conversationId is { } id)
             ChatNavigator.RequestOpen(id);
-        return OpenTab(NVOAMASIS.Services.Chat.ChatNavigator.TabKey, Localizer["chat_title"],
+        return OpenTab(DNX.Services.Chat.ChatNavigator.TabKey, Localizer["chat_title"],
             RenderComponent(typeof(Components.Chat.Pages.ChatIndex)));
     }
 

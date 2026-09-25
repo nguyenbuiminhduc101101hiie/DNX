@@ -7,8 +7,8 @@
 @using System.Globalization
 @using System.Security.Cryptography
 @using System.Text
-@using NVOAMASIS.Models
-@using NVOAMASIS.Data
+@using DNX.Models
+@using DNX.Data
 @inject AppDbContext Db
 @inject AccountService asv
 @inject SharedServices ssv
@@ -16,9 +16,9 @@
 @inject ISnackbar Snackbar
 @inject IStringLocalizer<SharedResource> Localizer
 
-@using NVOAMASIS.Resources
+@using DNX.Resources
 @using Microsoft.Extensions.Localization
-@using NVOAMASIS.Services
+@using DNX.Services
 
 <MudPaper Class="pa-4">
     <MudStack Row="true" AlignItems="AlignItems.Center" Justify="Justify.SpaceBetween" Class="mb-3">
@@ -168,7 +168,7 @@
 </MudPaper>
 
 @code {
-    // IMPORTANT: nếu namespace AppDbContext khác NVOAMASIS.Data thì đổi dòng @using ở trên theo namespace thật trong AppDbContext.cs.
+    // IMPORTANT: nếu namespace AppDbContext khác DNX.Data thì đổi dòng @using ở trên theo namespace thật trong AppDbContext.cs.
 
     private const string PermissionMenuName = "Inventory";
     private static readonly Guid SpItcDepotId = Guid.Parse("47DEC189-7AED-4AF0-94AF-DAA2B1C14F9A");

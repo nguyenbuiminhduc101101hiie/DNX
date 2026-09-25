@@ -1,4 +1,4 @@
-USE [NVOAMASIS]
+USE [DNX]
 GO
 
 /****** Object:  Table [dbo].[FormBooking] ******/

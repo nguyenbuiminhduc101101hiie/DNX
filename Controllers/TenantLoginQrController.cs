@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NVOAMASIS.Services.MultiTenant;
+using DNX.Services.MultiTenant;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 /// <summary>
 /// Public API: điện thoại quét QR gọi endpoint này để lấy thông tin đăng nhập theo token.

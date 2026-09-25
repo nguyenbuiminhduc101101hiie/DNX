@@ -16,15 +16,15 @@ using MailKit.Security;
 
 using Microsoft.EntityFrameworkCore;
 
-using NVOAMASIS.Data;
+using DNX.Data;
 
 using Microsoft.JSInterop;
 
-using NVOAMASIS.Models;
+using DNX.Models;
 
 
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 
 {
 

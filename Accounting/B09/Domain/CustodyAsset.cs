@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Accounting.B09.Domain;
+namespace DNX.Accounting.B09.Domain;
 
 // Off-balance-sheet / custody goods for logistics and warehouse disclosures.
 public class CustodyAsset

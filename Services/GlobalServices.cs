@@ -5,12 +5,12 @@ using MimeKit;
 using RazorLight;
 using Stimulsoft.System.Windows.Forms;
 using System.Text.Json;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 using static Stimulsoft.Report.Images.StiReportImages;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class GlobalServices(AppDbContext _context, IWebHostEnvironment _env ,  AccountService asv, HistoryLogService HistoryLogService)
     {

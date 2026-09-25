@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 /// <summary>Lưu / đọc / xóa file đính kèm (dạng byte trong DB) cho các màn hình báo giá 3.2 - 3.6.</summary>
 public class ProductPriceAttachmentService(IDbContextFactory<AppDbContext> dbFactory)

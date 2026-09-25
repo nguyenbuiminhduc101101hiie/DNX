@@ -4,10 +4,10 @@ using Stimulsoft.Blockly.Model;
 using System.Globalization;
 using System.Net.Http;
 using System.Xml.Linq;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class SingletonSerivce(IDbContextFactory<AppDbContext> _ctxFactory, CustomAuthenticationStateProvider _cusAuth, HttpClient _httpClient)
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     public class M_PhieuChi
     {

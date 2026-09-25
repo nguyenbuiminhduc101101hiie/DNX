@@ -1,13 +1,13 @@
 ﻿@attribute [Authorize]
 @using System.Globalization
-@using NVOAMASIS.Models
-@using NVOAMASIS.Services
+@using DNX.Models
+@using DNX.Services
 @using Microsoft.EntityFrameworkCore
 @inject SharedServices ssv
 @inject AccountService asv
 @inject ISnackbar Snackbar
 @inject IStringLocalizer<SharedResource> Localizer
-@inject IDbContextFactory<NVOAMASIS.Data.AppDbContext> DbFactory
+@inject IDbContextFactory<DNX.Data.AppDbContext> DbFactory
 
 <PageTitle>@($"7.7 {Localizer["Container_Report"]}")</PageTitle>
 

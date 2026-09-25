@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Services.Chat;
+namespace DNX.Services.Chat;
 
 /// <summary>
 /// Lưu file đính kèm chat trên đĩa, ngoài wwwroot:

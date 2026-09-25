@@ -4,10 +4,10 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     /// <summary>
     /// Nhận biến động số dư từ SePay, khớp với Phiếu thu theo số phiếu trong nội dung chuyển khoản,

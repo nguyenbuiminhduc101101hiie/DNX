@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     public class M_LenhDieuXe
     {

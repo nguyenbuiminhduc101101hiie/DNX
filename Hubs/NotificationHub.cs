@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 
-namespace NVOAMASIS.Hubs
+namespace DNX.Hubs
 {
     /// <summary>
     /// Server đẩy thông báo qua IHubContext&lt;NotificationHub&gt;.Clients.User(...).

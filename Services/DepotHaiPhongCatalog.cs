@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Text;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public sealed class DepotHaiPhongReport
 {

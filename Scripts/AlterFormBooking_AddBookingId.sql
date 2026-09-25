@@ -1,5 +1,5 @@
 -- Add BookingId column to FormBooking to link a row to a Booking (dbo.Booking / CONTAINEROUTBOUNDNOTIFY_sale)
-USE [NVOAMASIS]
+USE [DNX]
 GO
 
 IF NOT EXISTS (

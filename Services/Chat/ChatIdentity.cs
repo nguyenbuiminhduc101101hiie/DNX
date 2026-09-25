@@ -1,7 +1,7 @@
 using System.Security.Claims;
-using NVOAMASIS.Services.MultiTenant;
+using DNX.Services.MultiTenant;
 
-namespace NVOAMASIS.Services.Chat;
+namespace DNX.Services.Chat;
 
 public readonly record struct ChatCaller(Guid UserId, string TenantKey);
 

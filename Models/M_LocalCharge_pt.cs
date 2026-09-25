@@ -1,4 +1,4 @@
-﻿namespace NVOAMASIS.Models
+﻿namespace DNX.Models
 {
     public class M_LocalCharge_pt
     {

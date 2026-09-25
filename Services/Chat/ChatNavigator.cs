@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Services.Chat;
+namespace DNX.Services.Chat;
 
 /// <summary>
 /// Trạng thái chat theo circuit: tab Chat có đang hiển thị không, hội thoại nào đang mở,

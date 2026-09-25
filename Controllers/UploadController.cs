@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace NVOAMASIS.Controllers
+namespace DNX.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

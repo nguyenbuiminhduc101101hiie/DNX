@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Accounting.B09.Domain;
+namespace DNX.Accounting.B09.Domain;
 
 public class FinancialStatementNoteSection
 {

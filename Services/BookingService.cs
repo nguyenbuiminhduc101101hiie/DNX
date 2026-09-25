@@ -5,12 +5,12 @@ using Stimulsoft.Report;
 using Stimulsoft.Report.Blazor;
 using System.Buffers;
 using System.Linq.Expressions;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 using ZXing;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class BookingService(AppDbContext _context, IWebHostEnvironment _env, IJSRuntime JSRuntime, AccountService asv)
     {

@@ -12,19 +12,19 @@ using Microsoft.Extensions.Localization;
 using Microsoft.IdentityModel.Tokens;
 using MudBlazor.Services;
 using MudExtensions.Services;
-using NVOAMASIS.Accounting.B09.Extensions;
-using NVOAMASIS.Components;
-using NVOAMASIS.Data;
-using NVOAMASIS.Hubs;
-using NVOAMASIS.Interface;
-using NVOAMASIS.Models;
-using NVOAMASIS.Options;
-using NVOAMASIS.Services;
-using NVOAMASIS.Services.Accounting;
-using NVOAMASIS.Services.Accounting.ExcelImport;
-using NVOAMASIS.Services.Chat;
-using NVOAMASIS.Services.Localization;
-using NVOAMASIS.Services.MultiTenant;
+using DNX.Accounting.B09.Extensions;
+using DNX.Components;
+using DNX.Data;
+using DNX.Hubs;
+using DNX.Interface;
+using DNX.Models;
+using DNX.Options;
+using DNX.Services;
+using DNX.Services.Accounting;
+using DNX.Services.Accounting.ExcelImport;
+using DNX.Services.Chat;
+using DNX.Services.Localization;
+using DNX.Services.MultiTenant;
 using Stimulsoft.Drawing;
 using System.Text;
 
@@ -50,8 +50,8 @@ static string ResolveDataProtectionKeysPath(IWebHostEnvironment env, ILogger log
     var candidates = new[]
     {
         Path.Combine(env.ContentRootPath, "Keys"),
-        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "NVOAMASIS", "Keys"),
-        Path.Combine(Path.GetTempPath(), "NVOAMASIS", "Keys")
+        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DNX", "Keys"),
+        Path.Combine(Path.GetTempPath(), "DNX", "Keys")
     };
 
     foreach (var path in candidates)
@@ -81,13 +81,13 @@ try
 {
     builder.Services.AddDataProtection()
         .PersistKeysToFileSystem(new DirectoryInfo(keysPath))
-        .SetApplicationName("NVOAMASIS");
+        .SetApplicationName("DNX");
 }
 catch (Exception ex)
 {
     dpLogger.LogWarning(ex, "AddDataProtection PersistKeysToFileSystem failed for {Path}; continuing without persistent keys.", keysPath);
     builder.Services.AddDataProtection()
-        .SetApplicationName("NVOAMASIS");
+        .SetApplicationName("DNX");
 }
 
 // Add services to the container.
@@ -126,7 +126,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     .AddCookie(cfg =>
     {
         cfg.LoginPath = "/Account/Login";
-        cfg.Cookie.Name = ".NVOAMASIS.Auth";
+        cfg.Cookie.Name = ".DNX.Auth";
         cfg.Cookie.Path = "/";
         cfg.Cookie.SameSite = SameSiteMode.Lax;
         cfg.Cookie.HttpOnly = true;
@@ -294,11 +294,11 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 builder.Services.AddScoped<IForgotPasswordEmailService, ForgotPasswordEmailService>();
 
 // AI Assistant - ChatGPT integration
-builder.Services.Configure<NVOAMASIS.Models.ChatGPTSettings>(builder.Configuration.GetSection("ChatGPT"));
-builder.Services.AddHttpClient<NVOAMASIS.Services.ChatGPTService>();
-builder.Services.AddScoped<NVOAMASIS.Services.ChatGPTService>();
-builder.Services.AddHttpClient<NVOAMASIS.Services.WebSearchService>();
-builder.Services.AddScoped<NVOAMASIS.Services.WebSearchService>();
+builder.Services.Configure<DNX.Models.ChatGPTSettings>(builder.Configuration.GetSection("ChatGPT"));
+builder.Services.AddHttpClient<DNX.Services.ChatGPTService>();
+builder.Services.AddScoped<DNX.Services.ChatGPTService>();
+builder.Services.AddHttpClient<DNX.Services.WebSearchService>();
+builder.Services.AddScoped<DNX.Services.WebSearchService>();
 
 
 

@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Models;
+namespace DNX.Models;
 
 public record PricingRateLaneInfo(string Code, string TitleKey);
 

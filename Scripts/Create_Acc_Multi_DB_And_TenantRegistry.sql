@@ -1,5 +1,5 @@
 /*
-  Registry database for multi-tenant NVOAMASIS.
+  Registry database for multi-tenant DNX.
   Server: logisticssoftware.vn
   Run with sa (or equivalent) — creates Acc_Multi_DB and TenantDatabaseRegistry.
 */

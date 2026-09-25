@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace NVOAMASIS.Migrations
+namespace DNX.Migrations
 {
     /// <summary>
     /// Inserts SharedResource keys for ChargeType UI (en-US, vi-VN, zh-CN).

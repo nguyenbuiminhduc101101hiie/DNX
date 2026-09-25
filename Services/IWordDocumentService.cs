@@ -1,6 +1,6 @@
-using NVOAMASIS.Models;
+using DNX.Models;
 
-namespace NVOAMASIS.Interface
+namespace DNX.Interface
 {
     public interface IWordDocumentService
     {

@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace NVOAMASIS.Data.Migrations
+namespace DNX.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AddLocalizationResource : Migration

@@ -1,6 +1,6 @@
-using NVOAMASIS.Models.Chat;
+using DNX.Models.Chat;
 
-namespace NVOAMASIS.Services.Chat;
+namespace DNX.Services.Chat;
 
 public abstract record ChatEvent(Guid ConversationId);
 

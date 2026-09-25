@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace NVOAMASIS.Migrations
+namespace DNX.Migrations
 {
     public partial class AddFormKindToBillSeaLayoutForm : Migration
     {

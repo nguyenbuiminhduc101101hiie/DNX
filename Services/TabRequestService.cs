@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 /// <summary>
 /// Cho phép một trang/dialog bất kỳ yêu cầu MainLayout mở (hoặc chuyển tới) một tab, và báo cho tab đang mở tải lại dữ liệu.

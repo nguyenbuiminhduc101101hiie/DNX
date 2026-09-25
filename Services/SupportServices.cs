@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.JSInterop;
 using OfficeOpenXml;
 using SixLabors.ImageSharp.ColorSpaces;
-using NVOAMASIS.Components.Charge.Pages;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Components.Charge.Pages;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 using static MudBlazor.CategoryTypes;
 using static Stimulsoft.Report.StiRecentConnections;
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class SupportServices(AppDbContext _context, AccountService asv, HistoryLogService HistoryLogService)
     {

@@ -1,10 +1,10 @@
 using System.Xml.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services.Localization;
+namespace DNX.Services.Localization;
 
 public class ResxImportService
 {

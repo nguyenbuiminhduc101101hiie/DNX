@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NVOAMASIS.Services.Localization;
+using DNX.Services.Localization;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

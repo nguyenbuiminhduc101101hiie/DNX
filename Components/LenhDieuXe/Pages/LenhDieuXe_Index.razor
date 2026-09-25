@@ -856,7 +856,7 @@ RowClick="@RowClicked" EditDialogOptions="@options"
 
             var dialogParams = new DialogParameters
             {
-                ["FormKind"] = NVOAMASIS.Models.BillLayoutFormKind.LenhDieuXe
+                ["FormKind"] = DNX.Models.BillLayoutFormKind.LenhDieuXe
             };
 
             var dialogRef = await DialogService.ShowAsync<Components.Shipment.Pages.DialogLayoutFormExportOption>(

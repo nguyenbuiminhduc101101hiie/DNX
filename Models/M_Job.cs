@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     public class M_Job
     {

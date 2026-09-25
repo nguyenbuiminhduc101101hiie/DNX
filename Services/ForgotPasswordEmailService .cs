@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Net.Mail;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public interface IForgotPasswordEmailService
     {

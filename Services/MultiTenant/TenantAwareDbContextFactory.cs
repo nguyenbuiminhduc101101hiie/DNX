@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
+using DNX.Data;
 
-namespace NVOAMASIS.Services.MultiTenant;
+namespace DNX.Services.MultiTenant;
 
 /// <summary>
 /// Uses the current tenant connection from claims/registry, or falls back to DefaultConnection.

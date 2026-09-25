@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     public class M_Customer
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     public class FinancialReportSnapshot
     {

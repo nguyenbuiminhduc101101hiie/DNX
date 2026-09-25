@@ -4,10 +4,10 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using NVOAMASIS.Models;
-using NVOAMASIS.Services;
+using DNX.Models;
+using DNX.Services;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 /// <summary>
 /// Webhook nhận biến động số dư từ SePay.

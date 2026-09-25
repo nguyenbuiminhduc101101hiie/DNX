@@ -1,20 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
-using NVOAMASIS.Components.BaoCaoQuyTienMat;
-using NVOAMASIS.Components.BaoCaoQuyTienMat.Pages;
-using static NVOAMASIS.Components.BaoCaoQuyTienMat.Pages.BaoCaoQuyTienMat_Index;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
+using DNX.Components.BaoCaoQuyTienMat;
+using DNX.Components.BaoCaoQuyTienMat.Pages;
+using static DNX.Components.BaoCaoQuyTienMat.Pages.BaoCaoQuyTienMat_Index;
 using Microsoft.JSInterop;
 using Stimulsoft.Report.Blazor;
 using Stimulsoft.Report;
 using Stimulsoft.Report.Components;
 using Stimulsoft.Report.Dictionary;
 using System.Globalization;
-using NVOAMASIS.Components.CUSTOMER.Pages;
-using NVOAMASIS.Services.MultiTenant;
+using DNX.Components.CUSTOMER.Pages;
+using DNX.Services.MultiTenant;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class PhieuThu_Chi_Services(AppDbContext _context, IWebHostEnvironment _env, AccountService asv ,CustomerService Cussv, IJSRuntime JSRuntime, ITenantContext tenantContext)
     {

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     [Table("FinancialReportLines")]
     public class M_FinancialReportLine

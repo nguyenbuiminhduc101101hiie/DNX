@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     /// <summary>Pub/sub in-process: báo cho màn hình Phiếu thu đang mở khi có phiếu vừa được tick "Đã thanh toán".</summary>
     public sealed class BankPaymentNotifier(ILogger<BankPaymentNotifier> logger)

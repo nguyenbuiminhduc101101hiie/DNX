@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NVOAMASIS.Services;
+using DNX.Services;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 /// <summary>
 /// Public email approval page for PhieuThu / PhieuChi.

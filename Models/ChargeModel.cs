@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
 	public class ChargeModel
 	{

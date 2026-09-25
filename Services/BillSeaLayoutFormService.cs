@@ -1,10 +1,10 @@
 using System.Xml.Linq;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 using Stimulsoft.Report;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public static class BillSeaReportTemplateNames
     {

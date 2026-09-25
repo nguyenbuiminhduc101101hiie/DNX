@@ -11,19 +11,19 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Net;
-using NVOAMASIS.Components.BaoCaoQuyTienMat.Pages;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Components.BaoCaoQuyTienMat.Pages;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using static MudBlazor.CategoryTypes;
 using static MudBlazor.Icons;
 using static Stimulsoft.Report.StiOptions.Export;
-using static NVOAMASIS.Components.BaoCaoQuyTienMat.Pages.BaoCaoQuyTienMat_Index;
-using static NVOAMASIS.Components.Report.Pages.TruckingReport7_3;
-using static NVOAMASIS.Components.Report.Pages.ShippingStatisticsReport;
+using static DNX.Components.BaoCaoQuyTienMat.Pages.BaoCaoQuyTienMat_Index;
+using static DNX.Components.Report.Pages.TruckingReport7_3;
+using static DNX.Components.Report.Pages.ShippingStatisticsReport;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class ReportServices(AppDbContext _context,  NavigationManager nav, IJSRuntime JSRuntime,CustomerService Cussv, ShipmentService shipsv)
     {

@@ -5,12 +5,12 @@ using MailKit.Security;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using MimeKit;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
-using NVOAMASIS.Services.MultiTenant;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
+using DNX.Services.MultiTenant;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public class PhieuApproveService(
     AppDbContext db,

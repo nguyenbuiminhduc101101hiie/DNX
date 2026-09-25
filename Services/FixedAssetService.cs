@@ -1,9 +1,9 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models.Accounting;
+using DNX.Data;
+using DNX.Models.Accounting;
 
-namespace NVOAMASIS.Services.Accounting;
+namespace DNX.Services.Accounting;
 
 public sealed class FixedAssetService : IFixedAssetService
 {

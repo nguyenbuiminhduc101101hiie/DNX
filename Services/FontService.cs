@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class FontService
     {

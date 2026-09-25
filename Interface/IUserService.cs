@@ -1,7 +1,7 @@
-﻿using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+﻿using DNX.Models;
+using DNX.Response;
 
-namespace NVOAMASIS.Interface
+namespace DNX.Interface
 {
     public interface IUserService
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     // DTO for 7.4 Agent Report
     public class AgentReportRow

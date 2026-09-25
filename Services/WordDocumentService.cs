@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Interface;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Interface;
+using DNX.Models;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class WordDocumentService : IWordDocumentService
     {

@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using ExcelDataReader;
 using OfficeOpenXml;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     /// <summary>Một dòng chi phí sửa chữa container đã đọc được từ file EOR/HDS excel (chưa tách Labor/Material).</summary>
     public sealed class EorImportRow

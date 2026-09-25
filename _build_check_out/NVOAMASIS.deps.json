@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "NVOAMASIS/1.0.0": {
+      "DNX/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Blazor.Bootstrap": "3.4.0",
@@ -43,7 +43,7 @@
           "UglyToad.PdfPig": "1.7.0-custom-5"
         },
         "runtime": {
-          "NVOAMASIS.dll": {}
+          "DNX.dll": {}
         }
       },
       "Azure.Core/1.25.0": {
@@ -2994,7 +2994,7 @@
     }
   },
   "libraries": {
-    "NVOAMASIS/1.0.0": {
+    "DNX/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

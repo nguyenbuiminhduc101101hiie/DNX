@@ -3,11 +3,11 @@ using System.Data.Common;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using NVOAMASIS.Accounting.B09.Domain;
-using NVOAMASIS.Accounting.B09.Options;
-using NVOAMASIS.Data;
+using DNX.Accounting.B09.Domain;
+using DNX.Accounting.B09.Options;
+using DNX.Data;
 
-namespace NVOAMASIS.Accounting.B09.Services;
+namespace DNX.Accounting.B09.Services;
 
 public sealed class SqlB09LedgerDataProvider : IB09LedgerDataProvider
 {

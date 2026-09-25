@@ -1,6 +1,6 @@
-using NVOAMASIS.Accounting.B09.Domain;
+using DNX.Accounting.B09.Domain;
 
-namespace NVOAMASIS.Accounting.B09.DTOs;
+namespace DNX.Accounting.B09.DTOs;
 
 public sealed class B09LineDto
 {

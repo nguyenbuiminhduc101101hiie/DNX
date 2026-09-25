@@ -4,10 +4,10 @@ using System.Text;
 using System.Text.RegularExpressions;
 using ExcelDataReader;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public enum ExcelCrudTab
 {

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     [Table("Booking_LenhCapRong_Attachment")]
     public class M_Booking_LenhCapRong_Attachment

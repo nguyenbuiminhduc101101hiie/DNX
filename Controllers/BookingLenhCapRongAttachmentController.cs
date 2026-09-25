@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
+using DNX.Data;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 [ApiController]
 [Route("api/booking-lenh-cap-rong-attachment")]

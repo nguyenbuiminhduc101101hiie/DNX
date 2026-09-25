@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Accounting.B09.Options;
+namespace DNX.Accounting.B09.Options;
 
 public class B09Options
 {

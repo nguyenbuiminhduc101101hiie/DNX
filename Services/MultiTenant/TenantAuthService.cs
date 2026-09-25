@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 
-namespace NVOAMASIS.Services.MultiTenant;
+namespace DNX.Services.MultiTenant;
 
 public class TenantAuthService(
     TenantDatabaseProvisioningService provisioning,
@@ -28,7 +28,7 @@ public class TenantAuthService(
             databaseName, sqlUserId, sqlPassword, cancellationToken);
         if (tenant == null)
             return new LoginResponse(false,
-                "Không đăng nhập được: kiểm tra tên database (vd. nvoamasis), SQL user/password và user ứng dụng.");
+                "Không đăng nhập được: kiểm tra tên database (vd. DNX), SQL user/password và user ứng dụng.");
 
         var canConnect = await provisioning.TestSqlConnectionAsync(
             tenant.ServerName, tenant.DatabaseName, tenant.SqlUserId, tenant.SqlPassword, cancellationToken);

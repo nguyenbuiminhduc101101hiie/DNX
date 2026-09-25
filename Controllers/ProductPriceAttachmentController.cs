@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
+using DNX.Data;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 /// <summary>Tải / xem file đính kèm của báo giá 3.2 - 3.6 (yêu cầu đăng nhập).</summary>
 [ApiController]

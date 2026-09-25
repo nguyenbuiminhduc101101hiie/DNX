@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class ExportCostPriceServices(AppDbContext _context, IWebHostEnvironment _env, AccountService asv)
     {

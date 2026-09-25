@@ -1,6 +1,6 @@
 ﻿// Services/HistoryLogService.cs (Blazor Client)
 using System.Text.Json;
-using NVOAMASIS.Models;
+using DNX.Models;
 
 public class HistoryLogService
 {

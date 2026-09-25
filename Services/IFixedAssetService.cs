@@ -1,6 +1,6 @@
-using NVOAMASIS.Models.Accounting;
+using DNX.Models.Accounting;
 
-namespace NVOAMASIS.Services.Accounting;
+namespace DNX.Services.Accounting;
 
 public interface IFixedAssetService
 {

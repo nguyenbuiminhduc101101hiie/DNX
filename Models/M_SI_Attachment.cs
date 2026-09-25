@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     [Table("SI_Attachment")]
     public class M_SI_Attachment

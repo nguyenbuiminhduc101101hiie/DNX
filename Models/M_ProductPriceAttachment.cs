@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     /// <summary>File đính kèm (lưu dạng byte trong DB) của các bản ghi báo giá 3.2 - 3.6. Bản ghi chủ lưu danh sách AttachmentId ở cột AttachmentIds.</summary>
     [Table("ProductPriceAttachments")]

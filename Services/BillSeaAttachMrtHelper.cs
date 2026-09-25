@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Xml.Linq;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public static class BillSeaAttachMrtHelper
     {

@@ -1,6 +1,6 @@
-using NVOAMASIS.Models.Accounting.ExcelImport;
+using DNX.Models.Accounting.ExcelImport;
 
-namespace NVOAMASIS.Services.Accounting.ExcelImport;
+namespace DNX.Services.Accounting.ExcelImport;
 
 public interface IAccountBalanceExcelImportService
 {

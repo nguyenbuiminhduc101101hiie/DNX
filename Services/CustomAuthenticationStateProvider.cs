@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Authorization;
 using System.Security.Claims;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 /// <summary>
 /// Blazor InteractiveServer auth state for IIS / circuit scenarios.

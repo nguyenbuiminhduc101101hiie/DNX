@@ -1,9 +1,9 @@
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 using Microsoft.EntityFrameworkCore;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class EInvoiceService
     {

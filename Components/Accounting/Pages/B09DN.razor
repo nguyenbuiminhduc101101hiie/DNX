@@ -1,13 +1,13 @@
 @page "/accounting/financial-statements/b09-dn"
-@namespace NVOAMASIS.Components.Accounting.Pages
+@namespace DNX.Components.Accounting.Pages
 @attribute [Authorize]
 @using Microsoft.EntityFrameworkCore
 @using OfficeOpenXml
-@using NVOAMASIS.Accounting.B09.Domain
-@using NVOAMASIS.Accounting.B09.DTOs
-@using NVOAMASIS.Accounting.B09.Services
-@using NVOAMASIS.Data
-@using NVOAMASIS.Models
+@using DNX.Accounting.B09.Domain
+@using DNX.Accounting.B09.DTOs
+@using DNX.Accounting.B09.Services
+@using DNX.Data
+@using DNX.Models
 @inject IB09FinancialStatementService B09Service
 @inject IDbContextFactory<AppDbContext> DbFactory
 @inject ISnackbar Snackbar

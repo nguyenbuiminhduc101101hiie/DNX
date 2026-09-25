@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Models;
+namespace DNX.Models;
 
 /// <summary>
 /// One row of an air freight quotation sheet (hãng bay / điểm đến / bậc giá theo kg).

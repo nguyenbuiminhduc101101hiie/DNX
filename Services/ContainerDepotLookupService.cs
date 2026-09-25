@@ -1,10 +1,10 @@
 using System.Data;
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public sealed class ContainerDepotLookupResult
 {

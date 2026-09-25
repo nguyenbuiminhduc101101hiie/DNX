@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using NVOAMASIS.Data;
+using DNX.Data;
 
 #nullable disable
 
-namespace NVOAMASIS.Migrations
+namespace DNX.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20260918120000_AddDaThanhToanToCredit")]

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Accounting.B09.Domain;
+using DNX.Accounting.B09.Domain;
 
-namespace NVOAMASIS.Accounting.B09.Data;
+namespace DNX.Accounting.B09.Data;
 
 public static class B09ModelBuilderExtensions
 {

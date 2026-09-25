@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Components.Account.Pages;
-using NVOAMASIS.Data;
-using NVOAMASIS.Interface;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Components.Account.Pages;
+using DNX.Data;
+using DNX.Interface;
+using DNX.Models;
+using DNX.Response;
 using System;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class UserServicecs(AppDbContext _context) : IUserService
     {

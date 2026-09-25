@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Models;
+namespace DNX.Models;
 
 public sealed class ImportedFileBatch : IEquatable<ImportedFileBatch>
 {

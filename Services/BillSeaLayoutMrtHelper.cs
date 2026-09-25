@@ -1,8 +1,8 @@
 using System.Globalization;
 using System.Xml.Linq;
-using NVOAMASIS.Models;
+using DNX.Models;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public static class BillSeaLayoutMrtHelper
     {

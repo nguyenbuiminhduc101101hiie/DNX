@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Hubs;
-using NVOAMASIS.Models;
-using NVOAMASIS.Services;
+using DNX.Data;
+using DNX.Hubs;
+using DNX.Models;
+using DNX.Services;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 [ApiController]
 [Route("api/mobile/notifications")]

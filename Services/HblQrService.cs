@@ -1,6 +1,6 @@
 using QRCoder;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class HblQrService
     {

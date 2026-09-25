@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Accounting.B09.Data;
-using NVOAMASIS.Components.Accounting.Pages;
-using NVOAMASIS.Models;
-using NVOAMASIS.Models.Accounting;
-using NVOAMASIS.Models.Chat;
-namespace NVOAMASIS.Data
+using DNX.Accounting.B09.Data;
+using DNX.Components.Accounting.Pages;
+using DNX.Models;
+using DNX.Models.Accounting;
+using DNX.Models.Chat;
+namespace DNX.Data
 {
     public class AppDbContext (DbContextOptions <AppDbContext> options) : DbContext(options)
     {

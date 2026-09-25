@@ -1,6 +1,6 @@
-using NVOAMASIS.Accounting.B09.Domain;
+using DNX.Accounting.B09.Domain;
 
-namespace NVOAMASIS.Accounting.B09.Services;
+namespace DNX.Accounting.B09.Services;
 
 public interface IB09LedgerDataProvider
 {

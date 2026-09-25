@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NVOAMASIS.Services.Chat;
+using DNX.Services.Chat;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 /// <summary>Tải file đính kèm chat — chỉ thành viên hội thoại (user lấy từ cookie claim, không từ query).</summary>
 [ApiController]

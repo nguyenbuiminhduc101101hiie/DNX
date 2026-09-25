@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     [Keyless]
     public class FilterCondition

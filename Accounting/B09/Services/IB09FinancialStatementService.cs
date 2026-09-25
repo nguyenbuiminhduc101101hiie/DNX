@@ -1,7 +1,7 @@
-using NVOAMASIS.Accounting.B09.Domain;
-using NVOAMASIS.Accounting.B09.DTOs;
+using DNX.Accounting.B09.Domain;
+using DNX.Accounting.B09.DTOs;
 
-namespace NVOAMASIS.Accounting.B09.Services;
+namespace DNX.Accounting.B09.Services;
 
 public interface IB09FinancialStatementService
 {

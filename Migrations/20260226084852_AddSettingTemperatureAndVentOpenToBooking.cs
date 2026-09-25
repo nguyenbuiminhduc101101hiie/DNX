@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace NVOAMASIS.Migrations
+namespace DNX.Migrations
 {
     /// <inheritdoc />
     public partial class AddSettingTemperatureAndVentOpenToBooking : Migration

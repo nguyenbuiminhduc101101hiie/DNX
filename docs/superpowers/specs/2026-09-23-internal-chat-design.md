@@ -14,7 +14,7 @@ Không thay đổi trang Message/`Notifications` hiện tại — vẫn dùng ch
 
 ## 2. Khác biệt so với LogisticsExport (cố ý)
 
-| LogisticsExport | NVOAMASIS | Lý do |
+| LogisticsExport | DNX | Lý do |
 |---|---|---|
 | Chat gắn booking | Conversation 1-1 / nhóm độc lập | Yêu cầu nghiệp vụ |
 | SignalR hub + client websocket | `ChatNotifier` singleton in-process | Component Blazor Server đã chạy trên server; không cần kết nối thứ hai |

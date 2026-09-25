@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Models.Accounting;
+namespace DNX.Models.Accounting;
 
 public sealed class FixedAssetDepreciationPostResult
 {

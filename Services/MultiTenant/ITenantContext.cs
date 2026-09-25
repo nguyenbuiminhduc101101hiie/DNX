@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Services.MultiTenant;
+namespace DNX.Services.MultiTenant;
 
 public interface ITenantContext
 {

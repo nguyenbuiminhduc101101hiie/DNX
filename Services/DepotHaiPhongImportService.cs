@@ -10,10 +10,10 @@ using ExcelDataReader;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public sealed class DepotHaiPhongPreview
 {

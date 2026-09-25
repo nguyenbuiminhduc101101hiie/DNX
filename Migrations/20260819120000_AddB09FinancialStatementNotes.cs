@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace NVOAMASIS.Migrations
+namespace DNX.Migrations
 {
     /// <summary>
     /// B09-DN (TT99/2025) reporting tables. Does not change GeneralLedgerEntries.

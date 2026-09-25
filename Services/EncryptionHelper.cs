@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public static class EncryptionHelper
     {

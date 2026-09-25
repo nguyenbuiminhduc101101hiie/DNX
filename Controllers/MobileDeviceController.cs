@@ -2,11 +2,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Services;
+using DNX.Data;
+using DNX.Models;
+using DNX.Services;
 
-namespace NVOAMASIS.Controllers;
+namespace DNX.Controllers;
 
 [ApiController]
 [Route("api/mobile/device")]

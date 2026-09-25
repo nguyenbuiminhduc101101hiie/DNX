@@ -675,7 +675,7 @@
                 return;
             }
 
-            var bbgnDialogParams = new DialogParameters { ["FormKind"] = NVOAMASIS.Models.BillLayoutFormKind.Bbgn };
+            var bbgnDialogParams = new DialogParameters { ["FormKind"] = DNX.Models.BillLayoutFormKind.Bbgn };
             var dialogRef = await DialogService.ShowAsync<Shipment.Pages.DialogLayoutFormExportOption>("Export BBGN - Chọn mẫu form", bbgnDialogParams, optionsdialog);
             var result = await dialogRef.Result;
             if (result.Canceled) return;

@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 using System.Xml.Linq;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 using static Stimulsoft.Report.StiOptions.Export;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class tigiaVCBservices
     {

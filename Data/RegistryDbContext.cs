@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Models;
+using DNX.Models;
 
-namespace NVOAMASIS.Data;
+namespace DNX.Data;
 
 public class RegistryDbContext(DbContextOptions<RegistryDbContext> options) : DbContext(options)
 {

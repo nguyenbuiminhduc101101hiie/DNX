@@ -3,10 +3,10 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using NVOAMASIS.Models;
-using NVOAMASIS.Services.MultiTenant;
+using DNX.Models;
+using DNX.Services.MultiTenant;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public class MobileJwtTokenService(IOptions<JwtSettings> jwtOptions)
 {

@@ -14,24 +14,24 @@ using Stimulsoft.Report.Web;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using NVOAMASIS.Components.Quotation.Pages;
-using NVOAMASIS.Components.Shipment.Pages;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
-using NVOAMASIS.Services.MultiTenant;
+using DNX.Components.Quotation.Pages;
+using DNX.Components.Shipment.Pages;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
+using DNX.Services.MultiTenant;
 
 using ZXing;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using static MudBlazor.CategoryTypes;
 using static Stimulsoft.Report.Func;
 using static Stimulsoft.Report.StiRecentConnections;
-using static NVOAMASIS.Components.Layout.DynamicTabs;
+using static DNX.Components.Layout.DynamicTabs;
 
 using System.Text.Json;
 using System.Linq;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class ShipmentService(AppDbContext _context, IWebHostEnvironment _env, IJSRuntime JSRuntime, AccountService asv, SupportServices supsv, HistoryLogService HistoryLogService, IDbContextFactory<AppDbContext> _dbFactory, ITenantContext _tenantContext, BillSeaLayoutFormService billSeaLayoutFormService)
     {

@@ -12,7 +12,7 @@
 @inject IStringLocalizer<SharedResource> Localizer
 @using System.Globalization
 @using Microsoft.EntityFrameworkCore
-@using NVOAMASIS.Data
+@using DNX.Data
 @inject HistoryLogService HistoryLogService
 @using System.Text.Json;
 @inject IJSRuntime JSRuntime
@@ -739,7 +739,7 @@
             {
                 var billDialogParams = new DialogParameters
                 {
-                    ["FormKind"] = NVOAMASIS.Models.BillLayoutFormKind.Sea,
+                    ["FormKind"] = DNX.Models.BillLayoutFormKind.Sea,
                     ["AllowTrang2"] = true
                 };
                 var dialogRef = await DialogService.ShowAsync<Shipment.Pages.DialogBillExportOption>("Export Bill - Chọn mẫu Bill", billDialogParams, optionsdialog);
@@ -755,7 +755,7 @@
             {
                 var billDialogParams = new DialogParameters
                 {
-                    ["FormKind"] = NVOAMASIS.Models.BillLayoutFormKind.Air,
+                    ["FormKind"] = DNX.Models.BillLayoutFormKind.Air,
                     ["AllowTrang2"] = true
                 };
                 var dialogRef = await DialogService.ShowAsync<Shipment.Pages.DialogBillExportOption>("Export Bill - Chọn mẫu Bill", billDialogParams, optionsdialog);
@@ -795,7 +795,7 @@
 
             if (type == "SI" || type == "SE")
             {
-                var anDialogParams = new DialogParameters { ["FormKind"] = NVOAMASIS.Models.BillLayoutFormKind.AnSea };
+                var anDialogParams = new DialogParameters { ["FormKind"] = DNX.Models.BillLayoutFormKind.AnSea };
                 var dialogRef = await DialogService.ShowAsync<Shipment.Pages.DialogLayoutFormExportOption>("Export AN Sea - Chọn mẫu form", anDialogParams, optionsdialog);
                 var result = await dialogRef.Result;
                 if (result.Canceled) return;
@@ -805,7 +805,7 @@
             }
             else if (type == "AI" || type == "AE")
             {
-                var anDialogParams = new DialogParameters { ["FormKind"] = NVOAMASIS.Models.BillLayoutFormKind.AnAir };
+                var anDialogParams = new DialogParameters { ["FormKind"] = DNX.Models.BillLayoutFormKind.AnAir };
                 var dialogRef = await DialogService.ShowAsync<Shipment.Pages.DialogLayoutFormExportOption>("Export AN Air - Chọn mẫu form", anDialogParams, optionsdialog);
                 var result = await dialogRef.Result;
                 if (result.Canceled) return;
@@ -904,7 +904,7 @@
                 return;
             }
 
-            var doDialogParams = new DialogParameters { ["FormKind"] = NVOAMASIS.Models.BillLayoutFormKind.Do };
+            var doDialogParams = new DialogParameters { ["FormKind"] = DNX.Models.BillLayoutFormKind.Do };
             var dialogRef = await DialogService.ShowAsync<Shipment.Pages.DialogLayoutFormExportOption>("Export DO - Chọn mẫu form", doDialogParams, optionsdialog);
             var result = await dialogRef.Result;
             if (result.Canceled) return;
@@ -976,7 +976,7 @@
                 return;
             }
 
-            var bbgnDialogParams = new DialogParameters { ["FormKind"] = NVOAMASIS.Models.BillLayoutFormKind.Bbgn };
+            var bbgnDialogParams = new DialogParameters { ["FormKind"] = DNX.Models.BillLayoutFormKind.Bbgn };
             var dialogRef = await DialogService.ShowAsync<Shipment.Pages.DialogLayoutFormExportOption>("Export BBGN - Chọn mẫu form", bbgnDialogParams, optionsdialog);
             var result = await dialogRef.Result;
             if (result.Canceled) return;

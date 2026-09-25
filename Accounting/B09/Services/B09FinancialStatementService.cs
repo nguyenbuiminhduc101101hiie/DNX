@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Accounting.B09.Domain;
-using NVOAMASIS.Accounting.B09.DTOs;
-using NVOAMASIS.Accounting.B09.Seed;
-using NVOAMASIS.Data;
+using DNX.Accounting.B09.Domain;
+using DNX.Accounting.B09.DTOs;
+using DNX.Accounting.B09.Seed;
+using DNX.Data;
 
-namespace NVOAMASIS.Accounting.B09.Services;
+namespace DNX.Accounting.B09.Services;
 
 public sealed class B09FinancialStatementService : IB09FinancialStatementService
 {

@@ -3,10 +3,10 @@ using System.Globalization;
 using System.Text;
 using ExcelDataReader;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public record PricingRateImportResult(int Imported, string? ErrorMessage);
 public record PricingRateParsePreview(List<M_PricingRate> Rows, string? ErrorMessage);

@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Hubs
+namespace DNX.Hubs
 {
     using Microsoft.AspNetCore.SignalR;
     using System.Security.Claims;

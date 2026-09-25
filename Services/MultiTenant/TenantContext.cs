@@ -1,8 +1,8 @@
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
+using DNX.Data;
 
-namespace NVOAMASIS.Services.MultiTenant;
+namespace DNX.Services.MultiTenant;
 
 public class TenantContext(
     IHttpContextAccessor httpContextAccessor,

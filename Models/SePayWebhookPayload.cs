@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     /// <summary>Body webhook SePay (biến động số dư).</summary>
     public class SePayWebhookPayload

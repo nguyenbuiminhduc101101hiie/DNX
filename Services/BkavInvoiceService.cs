@@ -10,10 +10,10 @@ using System.Text.Unicode;
 using System.Xml.Serialization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public static class BkavInvoiceCommandTypes
 {

@@ -1,9 +1,9 @@
 using System.Globalization;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 /// <summary>Số tiền của hóa đơn mà một dòng tài khoản trong nghiệp vụ hạch toán sẽ lấy.</summary>
 public enum AutoPostingSource

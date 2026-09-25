@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Accounting.B09.Domain;
+namespace DNX.Accounting.B09.Domain;
 
 public enum B09ValueType
 {

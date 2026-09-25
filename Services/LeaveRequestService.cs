@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.SignalR;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
-using NVOAMASIS.Hubs;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
+using DNX.Hubs;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class LeaveRequestService
     {

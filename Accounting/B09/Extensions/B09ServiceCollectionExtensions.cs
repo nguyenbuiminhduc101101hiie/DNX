@@ -1,10 +1,10 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NVOAMASIS.Accounting.B09.Options;
-using NVOAMASIS.Accounting.B09.Seed;
-using NVOAMASIS.Accounting.B09.Services;
+using DNX.Accounting.B09.Options;
+using DNX.Accounting.B09.Seed;
+using DNX.Accounting.B09.Services;
 
-namespace NVOAMASIS.Accounting.B09.Extensions;
+namespace DNX.Accounting.B09.Extensions;
 
 public static class B09ServiceCollectionExtensions
 {

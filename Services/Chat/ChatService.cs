@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models.Chat;
+using DNX.Data;
+using DNX.Models.Chat;
 
-namespace NVOAMASIS.Services.Chat;
+namespace DNX.Services.Chat;
 
 /// <summary>Lỗi nghiệp vụ chat; Message là key localization (xem Scripts/Localization_Chat.sql).</summary>
 public sealed class ChatException(string code) : Exception(code);

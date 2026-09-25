@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Options;
+namespace DNX.Options;
 
 public sealed class AccountBalanceImportOptions
 {

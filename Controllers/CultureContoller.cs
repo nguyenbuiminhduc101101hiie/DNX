@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace NVOAMASIS.Controllers
+namespace DNX.Controllers
 {
     [Route("[controller]/[action]")]
     public class CultureController : Controller

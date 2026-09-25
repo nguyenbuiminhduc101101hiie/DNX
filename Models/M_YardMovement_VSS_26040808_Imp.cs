@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Models;
+namespace DNX.Models;
 
 public class M_8_3_VSS_IN_OUT_YARD_Imp : IExcelImportEntity
 {

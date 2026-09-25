@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Accounting.B09.Domain;
+namespace DNX.Accounting.B09.Domain;
 
 // Kept separate from Client so the existing Client entity does not need to be changed immediately.
 public class RelatedPartyProfile

@@ -1,11 +1,11 @@
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 using QRCoder;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     /// <summary>
     /// QR D/O theo (HblId, loại). Single company — logo/connection inject lúc render PDF.

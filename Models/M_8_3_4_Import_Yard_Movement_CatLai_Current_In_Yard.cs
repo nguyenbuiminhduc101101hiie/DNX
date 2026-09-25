@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Models;
+namespace DNX.Models;
 
 public class M_8_3_4_Import_Yard_Movement_CatLai_Current_In_Yard : IExcelImportEntity
 {

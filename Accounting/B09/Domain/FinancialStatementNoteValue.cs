@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NVOAMASIS.Accounting.B09.Domain;
+namespace DNX.Accounting.B09.Domain;
 
 public class FinancialStatementNoteValue
 {

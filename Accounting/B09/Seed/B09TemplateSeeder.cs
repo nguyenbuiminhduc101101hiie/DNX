@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Accounting.B09.Domain;
-using NVOAMASIS.Data;
+using DNX.Accounting.B09.Domain;
+using DNX.Data;
 
-namespace NVOAMASIS.Accounting.B09.Seed;
+namespace DNX.Accounting.B09.Seed;
 
 public sealed class B09TemplateSeeder
 {

@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     [Table("8_3_7_Yard_Spltc_Import")]
     public class M_8_3_7_Yard_Spltc_Import

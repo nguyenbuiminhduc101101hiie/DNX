@@ -4,11 +4,11 @@ using Org.BouncyCastle.Asn1.Ocsp;
 using Stimulsoft.Report;
 using Stimulsoft.Report.Blazor;
 using System.Globalization;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class DNTUServices(AppDbContext _context, IWebHostEnvironment _env, AccountService asv, IJSRuntime JSRuntime)
     {

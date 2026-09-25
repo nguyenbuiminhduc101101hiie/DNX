@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace NVOAMASIS.Helpers;
+namespace DNX.Helpers;
 
 public static class PasswordPolicy
 {

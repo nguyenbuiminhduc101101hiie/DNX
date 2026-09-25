@@ -9,14 +9,14 @@ using Stimulsoft.Report.Components;
 using Stimulsoft.Report.Dictionary;
 using System.Text.Json;
 using System.Text.RegularExpressions;
-using NVOAMASIS.Components.Report_RFQ.Pages;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
-using NVOAMASIS.Services.MultiTenant;
-using static NVOAMASIS.Components.Report_RFQ.Pages.Index;
+using DNX.Components.Report_RFQ.Pages;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
+using DNX.Services.MultiTenant;
+using static DNX.Components.Report_RFQ.Pages.Index;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class QuotationService(AppDbContext _context, IJSRuntime JSRuntime, AccountService asv, HistoryLogService HistoryLogService, BillSeaLayoutFormService billSeaLayoutFormService, ITenantContext tenantContext)
     {

@@ -1,9 +1,9 @@
 /*
   Template: CREATE dbo.account_balance like jnl (empty DB / new environment).
-  Use Alter_account_balance_align_with_jnl.sql when table already exists on NVOAMASIS.
+  Use Alter_account_balance_align_with_jnl.sql when table already exists on DNX.
 */
 
-USE [NVOAMASIS];
+USE [DNX];
 GO
 
 IF OBJECT_ID(N'dbo.account_balance', N'U') IS NOT NULL

@@ -1,4 +1,4 @@
-namespace NVOAMASIS.Models.Chat;
+namespace DNX.Models.Chat;
 
 /// <summary>Tin nhắn gửi cho UI. Trung lập với người xem — UI tự so SenderUserId với user hiện tại.</summary>
 public sealed record ChatMessageDto(

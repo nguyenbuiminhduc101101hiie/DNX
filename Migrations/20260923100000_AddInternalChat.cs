@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using NVOAMASIS.Data;
+using DNX.Data;
 
 #nullable disable
 
-namespace NVOAMASIS.Migrations
+namespace DNX.Migrations
 {
     /// <summary>Chat nội bộ — tương đương Scripts/CreateChatTables.sql</summary>
     [DbContext(typeof(AppDbContext))]

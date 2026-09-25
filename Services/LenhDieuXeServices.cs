@@ -4,13 +4,13 @@ using Stimulsoft.Report;
 using Stimulsoft.Report.Blazor;
 using Stimulsoft.Report.Components;
 using Stimulsoft.Report.Dictionary;
-using NVOAMASIS.Components.CUSTOMER.Pages;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
-using NVOAMASIS.Services.MultiTenant;
+using DNX.Components.CUSTOMER.Pages;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
+using DNX.Services.MultiTenant;
 
-namespace NVOAMASIS.Services
+namespace DNX.Services
 {
     public class LenhDieuXeServices(
         AppDbContext _context,

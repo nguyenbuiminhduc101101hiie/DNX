@@ -6,9 +6,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using NVOAMASIS.Components.UserList.Pages;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Components.UserList.Pages;
+using DNX.Data;
+using DNX.Models;
 
 [ApiController]
 [Route("api/[controller]")]

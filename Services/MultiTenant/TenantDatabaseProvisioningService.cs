@@ -1,10 +1,10 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
-using NVOAMASIS.Response;
+using DNX.Data;
+using DNX.Models;
+using DNX.Response;
 
-namespace NVOAMASIS.Services.MultiTenant;
+namespace DNX.Services.MultiTenant;
 
 public class TenantDatabaseProvisioningService(
     IConfiguration configuration,
@@ -34,7 +34,7 @@ public class TenantDatabaseProvisioningService(
             return new BoolandMessReponse(false, "SQL user chỉ được chứa chữ, số và dấu gạch dưới (không dùng sa).");
 
         var server = configuration["MultiTenant:Server"] ?? "logisticssoftware.vn";
-        var templateDb = configuration["MultiTenant:TemplateDatabase"] ?? "nvoamasis";
+        var templateDb = configuration["MultiTenant:TemplateDatabase"] ?? "DNX";
         var configuredBackupFolder = configuration["MultiTenant:BackupFolder"];
 
         if (await registryDb.TenantDatabases.AnyAsync(x => x.DatabaseName == databaseName, cancellationToken))
@@ -133,7 +133,7 @@ public class TenantDatabaseProvisioningService(
     }
 
     /// <summary>
-    /// Database đã có trước multi-tenant (vd. nvoamasis): cho phép login nếu SQL đúng, tự ghi registry.
+    /// Database đã có trước multi-tenant (vd. DNX): cho phép login nếu SQL đúng, tự ghi registry.
     /// </summary>
     public async Task<TenantDatabaseRegistry?> ResolveOrRegisterLegacyTenantAsync(
         string databaseName,

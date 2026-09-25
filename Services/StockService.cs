@@ -1,10 +1,10 @@
 using System.Globalization;
 using Microsoft.EntityFrameworkCore;
-using NVOAMASIS.Data;
-using NVOAMASIS.Models;
+using DNX.Data;
+using DNX.Models;
 using OfficeOpenXml;
 
-namespace NVOAMASIS.Services;
+namespace DNX.Services;
 
 public record StockListFilter(
     string? Location,

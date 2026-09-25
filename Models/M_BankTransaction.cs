@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NVOAMASIS.Models
+namespace DNX.Models
 {
     /// <summary>Giao dịch tiền vào tài khoản ngân hàng nhận qua webhook (SePay).</summary>
     public class M_BankTransaction
