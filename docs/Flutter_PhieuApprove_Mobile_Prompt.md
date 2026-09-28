@@ -82,7 +82,7 @@ Body:
 
 ```json
 {
-  "databaseName": "DNX",
+  "databaseName": "dnx",
   "sqlUserId": "sgn-fc-admin",
   "sqlPassword": "***",
   "appUserName": "username",
@@ -99,7 +99,7 @@ Response success:
   "accessToken": "eyJhbGciOi...",
   "expiresAtUtc": "2026-07-27T00:00:00Z",
   "tenantId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-  "databaseName": "DNX",
+  "databaseName": "dnx",
   "usrId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
   "usr": "username",
   "name": "Display Name",

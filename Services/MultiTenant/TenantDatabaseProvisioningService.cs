@@ -34,7 +34,7 @@ public class TenantDatabaseProvisioningService(
             return new BoolandMessReponse(false, "SQL user chỉ được chứa chữ, số và dấu gạch dưới (không dùng sa).");
 
         var server = configuration["MultiTenant:Server"] ?? "logisticssoftware.vn";
-        var templateDb = configuration["MultiTenant:TemplateDatabase"] ?? "DNX";
+        var templateDb = configuration["MultiTenant:TemplateDatabase"] ?? "dnx";
         var configuredBackupFolder = configuration["MultiTenant:BackupFolder"];
 
         if (await registryDb.TenantDatabases.AnyAsync(x => x.DatabaseName == databaseName, cancellationToken))
@@ -133,7 +133,7 @@ public class TenantDatabaseProvisioningService(
     }
 
     /// <summary>
-    /// Database đã có trước multi-tenant (vd. DNX): cho phép login nếu SQL đúng, tự ghi registry.
+    /// Database đã có trước multi-tenant (vd. dnx): cho phép login nếu SQL đúng, tự ghi registry.
     /// </summary>
     public async Task<TenantDatabaseRegistry?> ResolveOrRegisterLegacyTenantAsync(
         string databaseName,
@@ -487,7 +487,7 @@ public class TenantDatabaseProvisioningService(
         CancellationToken cancellationToken)
     {
         var options = new DbContextOptionsBuilder<AppDbContext>()
-            .UseSqlServer(tenantConnectionString)
+            .UseSqlServer(tenantConnectionString, sql => sql.UseCompatibilityLevel(120))
             .Options;
 
         await using var db = new AppDbContext(options);

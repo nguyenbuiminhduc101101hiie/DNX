@@ -112,7 +112,7 @@ public class MobileAuthController(
             Send_OTP_login = appUser.Send_OTP_login
         };
 
-        var defaultDb = configuration["MultiTenant:TemplateDatabase"] ?? "DNX";
+        var defaultDb = configuration["MultiTenant:TemplateDatabase"] ?? "dnx";
         var tenantId = Guid.Empty;
         var token = jwtTokenService.CreateToken(authUser, tenantId, defaultDb, out var expires);
 
