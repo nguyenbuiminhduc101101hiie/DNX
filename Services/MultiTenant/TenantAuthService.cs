@@ -28,7 +28,7 @@ public class TenantAuthService(
             databaseName, sqlUserId, sqlPassword, cancellationToken);
         if (tenant == null)
             return new LoginResponse(false,
-                "Không đăng nhập được: kiểm tra tên database (vd. dnx), SQL user/password và user ứng dụng.");
+                "Không đăng nhập được: kiểm tra tên database (vd. nvoamasis), SQL user/password và user ứng dụng.");
 
         var canConnect = await provisioning.TestSqlConnectionAsync(
             tenant.ServerName, tenant.DatabaseName, tenant.SqlUserId, tenant.SqlPassword, cancellationToken);

@@ -1,7 +1,7 @@
 /*
   Module 12 - Quản lý nhân sự, GIAI ĐOẠN 3: bảng lương.
   - Chạy SAU CreateHrTables.sql và CreateHrLeaveTimesheetTables.sql.
-  - Chạy trên TỪNG tenant DB + DB template (MultiTenant:TemplateDatabase, mặc định "dnx").
+  - Chạy trên TỪNG tenant DB + DB template (MultiTenant:TemplateDatabase, mặc định "nvoamasis").
   - Safe to re-run. Tương đương migration 20260930090000_AddHrPayroll.
 
   Tham số pháp lý mặc định (kiểm tra lại với văn bản hiện hành, sửa tại 12.9 > Tham số & tài khoản):

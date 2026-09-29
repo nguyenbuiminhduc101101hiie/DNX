@@ -133,7 +133,7 @@ public class TenantDatabaseProvisioningService(
     }
 
     /// <summary>
-    /// Database đã có trước multi-tenant (vd. dnx): cho phép login nếu SQL đúng, tự ghi registry.
+    /// Database đã có trước multi-tenant (vd. nvoamasis): cho phép login nếu SQL đúng, tự ghi registry.
     /// </summary>
     public async Task<TenantDatabaseRegistry?> ResolveOrRegisterLegacyTenantAsync(
         string databaseName,

@@ -216,6 +216,20 @@ namespace DNX.Data
         public DbSet<HrPayrollPeriod> HrPayrollPeriods => Set<HrPayrollPeriod>();
         public DbSet<HrPayslip> HrPayslips => Set<HrPayslip>();
 
+        // Khóa sổ kỳ kế toán (10.8): chặn thêm / sửa / xóa chứng từ, sổ cái, phiếu thu / chi của kỳ đã khóa.
+        // Xem Services/Accounting/AccountingPeriodLock.cs.
+        public override int SaveChanges(bool acceptAllChangesOnSuccess)
+        {
+            DNX.Services.Accounting.AccountingPeriodLock.CheckTrackedChanges(this);
+            return base.SaveChanges(acceptAllChangesOnSuccess);
+        }
+
+        public override async Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default)
+        {
+            await DNX.Services.Accounting.AccountingPeriodLock.CheckTrackedChangesAsync(this, cancellationToken);
+            return await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -233,6 +247,9 @@ namespace DNX.Data
                 entity.Property(e => e.Amount).HasColumnType("decimal(18,2)");
                 entity.HasIndex(e => new { e.Provider, e.ProviderTxnId }).IsUnique();
                 entity.HasIndex(e => e.PhieuthuID);
+                entity.HasIndex(e => e.PhieuchiID);
+                entity.Property(e => e.HoaDonNoibo).HasMaxLength(100);
+                entity.HasIndex(e => new { e.HoaDonNoibo, e.HoaDonCustomerId });
             });
 
             modelBuilder.Entity<M_BillSeaLayoutForm>(entity =>

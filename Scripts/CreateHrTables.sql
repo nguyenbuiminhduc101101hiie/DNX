@@ -2,7 +2,7 @@
   Module 12 - Quản lý nhân sự (giai đoạn 1): hồ sơ nhân viên, chức vụ, hợp đồng,
   lịch sử thay đổi, giấy tờ đính kèm.
   - Chạy trên TỪNG tenant DB đang có VÀ trên DB template (MultiTenant:TemplateDatabase,
-    mặc định "dnx") để tenant tạo mới về sau có sẵn bảng.
+    mặc định "nvoamasis") để tenant tạo mới về sau có sẵn bảng.
   - Safe to re-run.
   - Tương đương migration 20260928090000_AddHrModule.
   - Phòng ban dùng lại bảng [Department] có sẵn (không tạo FK để tránh phụ thuộc

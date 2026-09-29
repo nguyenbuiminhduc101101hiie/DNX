@@ -1,5 +1,5 @@
 -- Tạo / cập nhật bảng UserThemePreferences (theme + font size theo account).
--- Chạy trên DB app đang dùng (DefaultConnection = dnx), KHÔNG dùng LMS.
+-- Chạy trên DB app đang dùng (DefaultConnection = nvoamasis), KHÔNG dùng LMS.
 -- Giá trị DEFAULT trùng DNX.Models.ThemeDefaults.
 
 IF OBJECT_ID(N'[dbo].[UserThemePreferences]', N'U') IS NULL

@@ -2,7 +2,7 @@
   Module 12 - Quản lý nhân sự, GIAI ĐOẠN 2: nghỉ phép theo quản lý trực tiếp, quỹ phép năm,
   ngày lễ, cấu hình nhân sự, bảng công.
   - Chạy SAU Scripts/CreateHrTables.sql (giai đoạn 1).
-  - Chạy trên TỪNG tenant DB + DB template (MultiTenant:TemplateDatabase, mặc định "dnx").
+  - Chạy trên TỪNG tenant DB + DB template (MultiTenant:TemplateDatabase, mặc định "nvoamasis").
   - Safe to re-run. Tương đương migration 20260929090000_AddHrLeaveTimesheet.
   - QUAN TRỌNG: phải chạy script này TRƯỚC khi deploy code mới, vì model LeaveRequest có thêm
     cột AssignedApproverId — thiếu cột thì mọi màn hình nghỉ phép (cũ và mới) đều lỗi.

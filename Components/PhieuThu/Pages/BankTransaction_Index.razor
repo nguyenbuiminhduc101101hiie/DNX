@@ -8,11 +8,11 @@
 @inject IDialogService DialogService
 @inject IStringLocalizer<SharedResource> Localizer
 
-<PageTitle>@Localizer["BankTransactions"]</PageTitle>
+<PageTitle>@Localizer["BankTransactionsReceipt"]</PageTitle>
 
 <MudPaper Class="pa-2">
     <MudStack Row AlignItems="AlignItems.Center" Class="mb-2">
-        <MudText Typo="Typo.h6">@Localizer["BankTransactions"]</MudText>
+        <MudText Typo="Typo.h6">@Localizer["BankTransactionsReceipt"]</MudText>
         <MudSpacer />
         <MudSwitch T="bool" Label="@Localizer["OnlyNeedReview"]" Color="Color.Primary"
                    Value="_onlyNeedReview" ValueChanged="OnFilterChanged" />
@@ -27,6 +27,7 @@
             <PropertyColumn Property="x => x.Amount" Title="@Localizer["Sotien"]" Format="#,##0" />
             <PropertyColumn Property="x => x.Content" Title="@Localizer["Noidung"]" />
             <PropertyColumn Property="x => x.ReferenceCode" Title="Ref" />
+            <PropertyColumn Property="x => x.LinkedLabel" Title="@Localizer["LinkTarget"]" />
             <TemplateColumn Title="@Localizer["status"]">
                 <CellTemplate>
                     <MudChip T="string" Size="Size.Small" Color="@StatusColor(context.Item.MatchStatus)">
@@ -77,7 +78,7 @@
                 _items = new();
                 return;
             }
-            _items = await bankSv.GetTransactionsAsync(_onlyNeedReview);
+            _items = await bankSv.GetTransactionsAsync(_onlyNeedReview, direction: "in");
         }
         finally
         {
@@ -97,9 +98,14 @@
         var dialog = await DialogService.ShowAsync<LinkReceiptDialog>(
             Localizer["LinkToReceipt"], parameters, new DialogOptions { FullWidth = true, MaxWidth = MaxWidth.Small });
         var result = await dialog.Result;
-        if (result.Canceled || result.Data is not Guid receiptId) return;
+        if (result.Canceled || result.Data is not LinkReceiptDialog.LinkTarget target) return;
 
-        var (ok, message) = await bankSv.LinkToReceiptAsync(txn.Id, receiptId, usr);
+        var (ok, message) = target switch
+        {
+            { PhieuthuId: Guid receiptId } => await bankSv.LinkToReceiptAsync(txn.Id, receiptId, usr),
+            { PhieuchiId: Guid phieuchiId } => await bankSv.LinkToPaymentAsync(txn.Id, phieuchiId, usr),
+            _ => await bankSv.LinkToInvoiceAsync(txn.Id, target.Noibo!, target.CustomerId!.Value, usr)
+        };
         Snackbar.Add(message, ok ? MudBlazor.Severity.Success : MudBlazor.Severity.Error);
         await Load();
     }

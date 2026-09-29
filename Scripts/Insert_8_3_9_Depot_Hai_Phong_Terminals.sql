@@ -1,6 +1,6 @@
 -- 8.3.9 Depot Hai Phong — insert missing Terminal rows
 -- Lookup import dung TermiNalName (khong phan biet hoa thuong, dung chuoi).
--- Chay tren DB: dnx / nvopasl / nvovssa / NVOCC (script idempotent).
+-- Chay tren DB: nvoamasis / nvopasl / nvovssa / NVOCC (script idempotent).
 --
 -- 10 menu / 7 ten depot:
 --   8.3.9.1 + 8.3.9.2  NAM DINH VU          (da co)

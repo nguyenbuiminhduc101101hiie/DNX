@@ -23,7 +23,7 @@ Quy tắc nghiệp vụ chính:
 
 1. Chép các file trong gói đè vào project (3 file sửa: `Program.cs`, `Data/AppDbContext.cs`,
    `Components/Layout/NavMenu.razor` — nếu repo đã thay đổi, dùng `hr_modified_files.patch`).
-2. Chạy SQL theo thứ tự trên **từng DB tenant** VÀ **DB template** (`MultiTenant:TemplateDatabase`, mặc định `dnx`):
+2. Chạy SQL theo thứ tự trên **từng DB tenant** VÀ **DB template** (`MultiTenant:TemplateDatabase`, mặc định `nvoamasis`):
    1. `Scripts/CreateHrTables.sql`
    2. `Scripts/Add_HR_Menu_Permissions.sql` (tự cấp toàn quyền HR cho user phòng `ADMIN`; bỏ đoạn đó nếu không muốn)
    3. `Scripts/Localization_HR.sql`

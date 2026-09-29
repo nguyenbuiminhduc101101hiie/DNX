@@ -416,3 +416,8 @@ App_Data/hr/
 # Output build thử, không commit
 _build_check_out/
 .DS_Store
+
+# Local secrets (real config values, not committed)
+appsettings.Local.json
+Secrets/
+

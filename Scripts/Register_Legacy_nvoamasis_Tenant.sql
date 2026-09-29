@@ -1,11 +1,11 @@
 /*
-  Đăng ký database gốc dnx vào Acc_Multi_DB (tùy chọn — app cũng tự ghi khi login lần đầu).
-  Đổi @SqlUserId / @SqlPassword cho đúng tài khoản SQL bạn dùng để vào dnx.
+  Đăng ký database gốc nvoamasis vào Acc_Multi_DB (tùy chọn — app cũng tự ghi khi login lần đầu).
+  Đổi @SqlUserId / @SqlPassword cho đúng tài khoản SQL bạn dùng để vào nvoamasis.
 */
 USE [Acc_Multi_DB];
 GO
 
-DECLARE @DatabaseName NVARCHAR(128) = N'dnx';
+DECLARE @DatabaseName NVARCHAR(128) = N'nvoamasis';
 DECLARE @SqlUserId NVARCHAR(128) = N'sgn-fc-admin';
 DECLARE @SqlPassword NVARCHAR(512) = N'qwe123!@#';
 DECLARE @ServerName NVARCHAR(256) = N'logisticssoftware.vn';

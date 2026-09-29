@@ -33,6 +33,11 @@ using System.Text;
 StimulsoftLicenseHelper.EnsureApplied();
 
 var builder = WebApplication.CreateBuilder(args);
+// Secret thật (connection string, API key...) nằm trong appsettings.Local.json — không commit lên git
+builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true);
+// Tên phần mềm (thanh tiêu đề + tên tab trình duyệt) — appsettings.json: "AppBrand"
+var appBrand = builder.Configuration["AppBrand"]?.Trim();
+if (!string.IsNullOrEmpty(appBrand)) DNX.AppInfo.Brand = appBrand;
 
 builder.Services.AddLocalization();
 
@@ -291,6 +296,7 @@ builder.Services.AddScoped<HrOrgService>();
 builder.Services.AddScoped<HrSettingsService>();
 builder.Services.AddScoped<HrLeaveService>();
 builder.Services.AddScoped<HrTimesheetService>();
+builder.Services.AddScoped<HrAttendanceService>();
 // Giai đoạn 3 - bảng lương
 builder.Services.AddScoped<HrPayrollService>();
 builder.Services.AddScoped<ResxImportService>();
