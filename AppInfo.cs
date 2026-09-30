@@ -8,7 +8,7 @@ namespace DNX
     /// </summary>
     public static class AppInfo
     {
-        public const string DefaultBrand = "DNX - NVOCC";
+        public const string DefaultBrand = "DNX";
 
         public static string Brand { get; set; } = DefaultBrand;
     }

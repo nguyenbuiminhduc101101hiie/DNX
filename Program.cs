@@ -297,6 +297,7 @@ builder.Services.AddScoped<HrSettingsService>();
 builder.Services.AddScoped<HrLeaveService>();
 builder.Services.AddScoped<HrTimesheetService>();
 builder.Services.AddScoped<HrAttendanceService>();
+builder.Services.AddScoped<DNX.Services.Kho.KhoService>(); // 10.18 Kho vật tư, hàng hóa
 // Giai đoạn 3 - bảng lương
 builder.Services.AddScoped<HrPayrollService>();
 builder.Services.AddScoped<ResxImportService>();
