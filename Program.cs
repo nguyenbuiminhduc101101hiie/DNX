@@ -257,6 +257,7 @@ builder.Services.AddScoped<ThuTucTuVanHQ_Services>();
 builder.Services.AddScoped<Bieugianangha_Services>();
 builder.Services.AddScoped<DNTUServices>();
 builder.Services.AddScoped<PhieuThu_Chi_Services>();
+builder.Services.AddScoped<DNX.Services.Accounting.PhieuThuChiVoucherService>();
 builder.Services.AddScoped<PhieuApproveService>();
 builder.Services.Configure<SePaySettings>(builder.Configuration.GetSection("SePay"));
 builder.Services.AddSingleton<BankPaymentNotifier>();
